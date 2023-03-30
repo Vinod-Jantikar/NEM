@@ -112,14 +112,22 @@ You can install any other package as well and plat around with it.
     * readFile :- This will read the file asynchronously.
 
 const fs=require("fs")
+
 fs.readFile("./text.txt",{encoding:"utf-8"},(err,data)=>{
+
 if(err){
+
 console.log("Cannot read the file")
+
 console.log(err)
+
 } else {
+
 console.log(data)
 }
+
 })
+
 console.log("Bye Guys!!")
 
 * readFileSync :- This will read the file synchronously, until the file reading is not finished, compiler is not going to the Bye Guys!! statement.
