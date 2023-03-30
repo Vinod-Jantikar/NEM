@@ -133,8 +133,11 @@ console.log("Bye Guys!!")
 * readFileSync :- This will read the file synchronously, until the file reading is not finished, compiler is not going to the Bye Guys!! statement.
 
 const fs=require("fs")
+
 const data=fs.readFileSync("./text.txt",{encoding:"utf-8"})
+
 console.log(data)
+
 console.log("Bye Guys!!")
 
 
@@ -144,13 +147,21 @@ console.log("Bye Guys!!")
 * writeFile :- This will write the file asynchronously.
 
 const fs=require("fs")
+
 fs.writeFile("./log.txt", "This is me first time wrinting in the file", (err)=>{
+
 if(err){
+
 console.log("Cannot write in the file")
+
 console.log(err)
+
 } else {
+
 console.log("Data has been written in the file")
+
 }
+
 })
 
 
